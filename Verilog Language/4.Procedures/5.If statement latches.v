@@ -21,14 +21,19 @@ module top_module (
     input      gas_tank_empty,
     output reg keep_driving  ); //
 
-    always @(*) begin
-        if (cpu_overheated)
-           shut_off_computer = 1;
-    end
-
-    always @(*) begin
-        if (~arrived)
-           keep_driving = ~gas_tank_empty;
-    end
-
+    always @(cpu_overheated) 
+        begin
+        if (cpu_overheated>0)
+           shut_off_computer = 1'b1;
+        else
+            shut_off_computer = 1'b0;
+        end
+    always@(arrived,gas_tank_empty)
+        begin
+            if (arrived>0|gas_tank_empty>0)
+           keep_driving = 1'b0;
+           else
+           keep_driving = 1'b1;
+           
+        end
 endmodule
