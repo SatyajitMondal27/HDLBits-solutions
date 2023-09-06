@@ -8,7 +8,7 @@ Abstract: HDLBits Problem Solutions Repository
 The HDLBits Problem Solutions Repository is a comprehensive collection of solutions to the problem statements found on the HDLBits website. HDLBits offers a vast array of hands-on problems designed to enhance the understanding and proficiency of hardware description languages (HDL) and digital design concepts. This repository serves as a valuable resource for students, engineers, and enthusiasts seeking practical solutions and insightful explanations for these challenging problems.
 
 ## Introduction :bulb:
-With a focus on HDL languages such as Verilog and VHDL, the repository provides well-documented, thoroughly tested, and highly optimized solutions for a wide range of topics, including combinational and sequential logic, finite state machines, memory circuits, and much more. Each solution is carefully crafted to demonstrate best practices, efficient coding techniques, and industry-standard design methodologies.
+With a focus on HDL languages such as Verilog, the repository provides well-documented, thoroughly tested, and highly optimized solutions for a wide range of topics, including combinational and sequential logic, finite state machines, memory circuits, and much more. Each solution is carefully crafted to demonstrate best practices, efficient coding techniques, and industry-standard design methodologies.
 
 
 ## Main Objective :dart:
