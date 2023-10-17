@@ -15,19 +15,18 @@ module top_module(
     always@(posedge clk,posedge areset)
          begin
             if(areset)
-                q=0;
+                q<=0;
             else if(clk && !areset)
             begin
                   if(load)
-                      q=data;
+                      q<=data;
                 else if(!load && ena)
                   begin
-                    q[0]=q[1];
-                    q[1]=q[2];
-                    q[2]=q[3];
-                    q[3]=0;
+                      q[0]<=q[1];
+                      q[1]<=q[2];
+                      q[2]<=q[3];
+                      q[3]<=0;
                 end
                 end
         end
-                
 endmodule
